@@ -1,0 +1,18 @@
+<ion-view view-title="Polycook">
+  <ion-content>
+      <!--ion-item collection-repeat="recipe in recipes">
+        <a class="item item-thumbnail-left" href="#">
+  	      <img src="../../../PolycookData/Pictures/{{recipe.picture_file}}">
+  	      <h2>{{recipe.name}}</h2>
+  	      <p>{{recipe.level}} - {{recipe.price}}</p>
+		    </a>
+      </ion-item-->
+      <div class="list" collection-repeat="recipe in recipes">
+        <a class="item item-thumbnail-left" href="#/app/recipes/{{recipe.id}}">
+            <img src="{{serviceUrl}}PolycookData/Pictures/{{recipe.picture_file}}">
+          <h2>{{recipe.name}}</h2>
+          <p>{{recipe.level}} - {{recipe.price}}</p>
+        </a>
+      </div>
+  </ion-content>
+</ion-view>

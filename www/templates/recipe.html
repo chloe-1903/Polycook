@@ -1,0 +1,69 @@
+<ion-view view-title="Recette {{selected_item.name}}">
+  <ion-content>
+      <!--div>
+        <img src="../PolycookData/Pictures/{{selected_item.picture_file}}">
+        <div class="item item-divider">
+          {{selected_item.name}}
+        </div>
+      </div-->
+    <div  class="myImage" style="background:url('{{serviceUrl}}PolycookData/Pictures/{{selected_item.picture_file}}') no-repeat; background-size: cover;">
+        <span>
+            <div class="row">
+              <div class="h3 title">{{selected_item.name}}</div>
+            </div>
+            <div class="row">
+              <div class="h5 title col">{{selected_item.level}}</div>
+              <div class="h5 title col">{{selected_item.prep_time}}</div>
+              <div class="h5 title col">{{selected_item.note}}</div>
+              <div class="h5 title col">{{selected_item.price}}€/part</div>
+            </div>
+        </span>
+    </div>
+
+    <div class="row">
+
+      <div class="card col text-center">
+        <div class="item item-text-wrap">
+            <button class="button button-clear  button-stable" ng-click="go('/app/ingredients/')">
+              <span class="glyphicon glyphicon-shopping-cart"></span>
+              Ingrédients
+            </button>
+        </div>
+      </div>
+
+      <div class="card col text-center">
+        <div class="item item-text-wrap">
+          <button class="button button-clear  button-stable">
+            <span class="glyphicon glyphicon-cutlery"></span>
+            Recette
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="card col text-center">
+        <div class="item item-text-wrap">
+          <button class="button button-clear button-stable">
+            <span class="glyphicon glyphicon-picture"></span>
+            Photos
+          </button>
+        </div>
+      </div>
+
+      <div class="card col text-center">
+        <div class="item item-text-wrap">
+          <button class="button button-clear button-stable">
+            <span class="glyphicon glyphicon-comment"></span>
+            Commentaires
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+
+  </ion-content>
+</ion-view>

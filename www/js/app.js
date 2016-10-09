@@ -59,6 +59,46 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.main', {
+      url: '/main',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/main.html',
+          controller: 'MainCtrl'
+        }
+      }
+    })
+
+    .state('app.recipes', {
+      url: '/recipes/',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/main.html',
+          controller: 'MainCtrl'
+        }
+      }
+    })
+
+    .state('app.recipe', {
+      url: '/recipes/:recipeId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/recipe.html',
+          controller: 'RecipeCtrl'
+        }
+      }
+    })
+
+    .state('app.ingredients', {
+      url: '/ingredients/:recipeId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/ingredients.html',
+          controller: 'IngredientsCtrl'
+        }
+      }
+    })
+
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
@@ -69,5 +109,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/main');
 });
