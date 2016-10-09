@@ -9,17 +9,6 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
-
 .controller('MainCtrl', function($scope, $ionicModal, $timeout, $http) {
   if(ionic.Platform.isAndroid()){
     $scope.serviceUrl = 'file:///android_asset/www/';
@@ -49,7 +38,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('IngredientsCtrl', function($scope, $http, $filter, $stateParams, $ionicPopup) {
+.controller('IngredientsCtrl', function($scope, $http, $filter, $stateParams) {
   if(ionic.Platform.isAndroid()){
     $scope.serviceUrl = 'file:///android_asset/www/';
   } else {
@@ -63,5 +52,19 @@ angular.module('starter.controllers', [])
     });
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+
+.controller('RecipeStepsCtrl', function($scope, $http, $filter, $stateParams) {
+  if(ionic.Platform.isAndroid()){
+    $scope.serviceUrl = 'file:///android_asset/www/';
+  } else {
+    $scope.serviceUrl = '../';
+  }
+  $http.get($scope.serviceUrl+"PolycookData/allRecipes.json")
+    .success(function(response) {
+        $scope.recipes = response.recipes;
+        $scope.rId = $stateParams.recipeId;
+        $scope.selected_item = $filter('filter')($scope.recipes, function (d) {return d.id === $scope.rId;})[0];
+    });
+})
+
+;

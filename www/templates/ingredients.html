@@ -1,11 +1,9 @@
 <ion-view view-title="{{selected_item.name}} Ingrédients">
   <ion-content>
 
-<ul class="list" collection-repeat="ingredient in selected_item.ingredients">
-	<li class="item">
+<div class="list" collection-repeat="ingredient in selected_item.ingredients">
 		<ion-checkbox ng-model="filter.red">{{ingredient}}</ion-checkbox>
-	</li>
-</ul>
+</div>
 
   </ion-content>
 </ion-view>
