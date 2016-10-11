@@ -64,6 +64,12 @@ angular.module('starter.controllers', [])
         $scope.recipes = response.recipes;
         $scope.rId = $stateParams.recipeId;
         $scope.selected_item = $filter('filter')($scope.recipes, function (d) {return d.id === $scope.rId;})[0];
+        console.log($scope.serviceUrl+"PolycookData/Recipes/"+ $scope.selected_item.steps_file);
+        $http.get($scope.serviceUrl+"PolycookData/Recipes/"+ $scope.selected_item.steps_file)
+          .success(function(response) {
+            console.log('ici');
+            $scope.steps=response.steps;
+        });   
     });
 })
 

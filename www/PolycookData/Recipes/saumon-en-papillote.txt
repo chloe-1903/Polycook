@@ -1,5 +1,8 @@
-1 Préchauffez le four à 180 °C.
-2 Dans un bol, préparez une sauce : mélangez l'huile d'olive, le jus de citron, le vinaigre balsamique avec une pincée de sel et du poivre.
-3 Ciselez finement l'oignon.
-4 Découpez 4 feuilles de papier sulfurisé. Déposez les pavés de saumon sur chacune. Recouvrez-les de crème épaisse, d'oignon ciselé et de sauce. Ajoutez un brin de thym par papillote puis refermez-les en les maintenant à l'aide d'un cure-dents.
-5 Déposez les papillotes dans un plat, enfournez pour 20 min. Servez chaud.
+{
+    "steps": [
+"PrÃ©chauffez le four Ã  180 Â°C.",
+"Dans un bol, prÃ©parez une sauce : mÃ©langez l'huile d'olive, le jus de citron, le vinaigre balsamique avec une pincÃ©e de sel et du poivre.",
+"Ciselez finement l'oignon.",
+"DÃ©coupez 4 feuilles de papier sulfurisÃ©. DÃ©posez les pavÃ©s de saumon sur chacune. Recouvrez-les de crÃ¨me Ã©paisse, d'oignon ciselÃ© et de sauce. Ajoutez un brin de thym par papillote puis refermez-les en les maintenant Ã  l'aide d'un cure-dents.",
+"DÃ©posez les papillotes dans un plat, enfournez pour 20 min. Servez chaud."
+]}

@@ -1,3 +1,7 @@
-1 Dans un saladier, mélangez la farine, le sel, le sucre et la levure. Ajoutez le lait, mélangez bien. Incorporez les oeufs et mélangez à nouveau.
-2 Faites fondre le beurre au micro-ondes à puissance faible, ou bien au bain-marie. Versez-le sur la pâte à pancakes et fouettez vigoureusement pour obtenir une préparation homogène.
-3 Beurrez une poêle anti-adhésive et placez-la sur feu vif. Lorsqu'elle est bien chaude, versez une petite louche de pâte à pancakes. Laissez cuire jusqu'à l'apparition de petites bulles à la surface du pancake. Glissez une spatule sous le pancake, retournez-le et laissez cuire 1 à 2 minutes.
+{
+	"steps": [
+		"Dans un saladier, mÃ©langez la farine, le sel, le sucre et la levure. Ajoutez le lait, mÃ©langez bien. Incorporez les oeufs et mÃ©langez Ã  nouveau.",
+		"Faites fondre le beurre au micro-ondes Ã  puissance faible, ou bien au bain-marie. Versez-le sur la pÃ¢te Ã  pancakes et fouettez vigoureusement pour obtenir une prÃ©paration homogÃ¨ne.",
+		"Beurrez une poÃªle anti-adhÃ©sive et placez-la sur feu vif. Lorsqu'elle est bien chaude, versez une petite louche de pÃ¢te Ã  pancakes. Laissez cuire jusqu'Ã  l'apparition de petites bulles Ã  la surface du pancake. Glissez une spatule sous le pancake, retournez-le et laissez cuire 1 Ã  2 minutes."
+	]
+}

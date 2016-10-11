@@ -1,0 +1,14 @@
+<ion-view view-title="{{selected_item.name}} Recette">
+  <ion-content>
+  	<div ng-repeat="step in steps">
+  		<div class="card">
+		  <div class="item item-divider">
+		    Etape {{$index+1}}
+		  </div>
+		  <div class="item item-text-wrap">
+		    {{step}}
+		  </div>
+		</div>
+	</div>
+    </ion-content>
+</ion-view>
