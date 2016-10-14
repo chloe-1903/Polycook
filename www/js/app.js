@@ -81,6 +81,28 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.comments', {
+      url: '/comments/:recipeId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/comments.html',
+          controller: 'CommentsCtrl'
+        }
+      }
+    })
+
+
+    .state('app.recipePictures', {
+      url: '/recipePictures/:recipeId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/recipePictures.html',
+          controller: 'RecipePicturesCtrl'
+        }
+      }
+    })
+
+
     .state('app.ingredients', {
       url: '/ingredients/:recipeId',
       views: {

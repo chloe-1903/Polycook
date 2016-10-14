@@ -1,8 +1,9 @@
 {
     "recipes": [
     	{"id" : "1",
-	"name": "Lasagnes végétariennes",
+        "name": "Lasagnes végétariennes",
     	"picture_file" : "lasagnes-vegetariennes.jpg",
+        "recipe_images" : ["11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg"],
     	"steps_file" : "lasagnes-vegetariennes.json",
     	"prep_time" : "20min",
     	"cooking_time" : "45min",
@@ -24,8 +25,9 @@
         "note":"4/5"
     	},
     	{"id" : "2",
-	"name": "Saumon en papillote",
+        "name": "Saumon en papillote",
     	"picture_file" : "saumon-en-papillote.jpg",
+        "recipe_images" : ["21.jpg", "22.jpg", "23.jpg", "24.jpeg", "25.jpg"],
     	"steps_file" : "saumon-en-papillote.txt",
     	"prep_time" : "15min",
     	"cooking_time" : "20min",
@@ -45,8 +47,9 @@
         "note":"4,6/5"
     	},
     	{"id" : "3",
-	"name": "Pancake rapide",
+        "name": "Pancake rapide",
     	"picture_file" : "pancake-rapide.jpg",
+        "recipe_images" : ["31.jpg", "32.jpg", "33.jpeg"],
     	"steps_file" : "pancake-rapide.txt",
     	"prep_time" : "5min",
     	"cooking_time" : "5min",
@@ -65,8 +68,9 @@
         "note":"3,4/5"
     	},
     	{"id" : "4",
-	"name": "Pissaladière Niçoise",
+        "name": "Pissaladière Niçoise",
     	"picture_file" : "pissaladiere.jpg",
+        "recipe_images" : ["41.jpg", "42.jpeg", "44.jpeg", "43.jpg"],
     	"steps_file" : "pissaladiere.txt",
     	"prep_time" : "30min",
     	"cooking_time" : "10min",
@@ -88,8 +92,9 @@
         "note":"4,9/5"
     	},
         {"id" : "5",
-	"name": "Salade Niçoise",
+        "name": "Salade Niçoise",
         "picture_file" : "salade-nicoise.jpg",
+        "recipe_images" : ["51.jpg", "52.jpg", "53.jpeg", "54.jpg"],
         "steps_file" : "salade-nicoise.txt",
         "prep_time" : "30min",
         "cooking_time" : "-",

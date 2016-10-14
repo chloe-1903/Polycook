@@ -67,9 +67,38 @@ angular.module('starter.controllers', [])
         console.log($scope.serviceUrl+"PolycookData/Recipes/"+ $scope.selected_item.steps_file);
         $http.get($scope.serviceUrl+"PolycookData/Recipes/"+ $scope.selected_item.steps_file)
           .success(function(response) {
-            console.log('ici');
             $scope.steps=response.steps;
         });   
+    });
+})
+
+.controller('CommentsCtrl', function($scope, $http, $filter, $stateParams) {
+  if(ionic.Platform.isAndroid()){
+    $scope.serviceUrl = 'file:///android_asset/www/';
+  } else {
+    $scope.serviceUrl = '../';
+  }
+  $http.get($scope.serviceUrl+"PolycookData/comments.json")
+    .success(function(response) {
+        $scope.recipes = response.recipe_comments;
+        $scope.rId = $stateParams.recipeId;
+        $scope.selected_item = $filter('filter')($scope.recipes, function (d) {return d.id === $scope.rId;})[0];
+        $scope.comments = $scope.selected_item.comments; 
+    });
+})
+
+.controller('RecipePicturesCtrl', function($scope, $http, $filter, $stateParams) {
+    if(ionic.Platform.isAndroid()){
+    $scope.serviceUrl = 'file:///android_asset/www/';
+  } else {
+    $scope.serviceUrl = '../';
+  }
+  $http.get($scope.serviceUrl+"PolycookData/allRecipes.json")
+    .success(function(response) {
+        $scope.recipes = response.recipes;
+        $scope.rId = $stateParams.recipeId;
+        $scope.selected_item = $filter('filter')($scope.recipes, function (d) {return d.id === $scope.rId;})[0];
+        $scope.recipe_images= $scope.selected_item.recipe_images; 
     });
 })
 
