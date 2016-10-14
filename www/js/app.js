@@ -91,7 +91,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-
     .state('app.recipePictures', {
       url: '/recipePictures/:recipeId',
       views: {
@@ -102,6 +101,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.newRecipe', {
+      url: '/newRecipe',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/newRecipe.html',
+          controller: 'NewRecipeCtrl'
+        }
+      }
+    })
 
     .state('app.ingredients', {
       url: '/ingredients/:recipeId',
