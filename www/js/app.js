@@ -24,20 +24,39 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 
 //Directive that returns an element which adds buttons on click which show an alert on click
-.directive("addbuttonsbutton", function(){
+.directive("addingredientsbutton", function(){
   return {
     restrict: "E",
-    template: "<button addbuttons class='button button-balanced ion-plus-round  col-offset-80'/>"
+    template: "<button addingredients class='button button-balanced ion-plus-round  col-offset-80'/>"
   }
 })
 
 //Directive for adding buttons on click that show an alert on click
-.directive("addbuttons", function($compile){
+.directive("addingredients", function($compile){
   return function(scope, element, attrs){
     element.bind("click", function(){
-      scope.count++;
-       var txt= "<label class='item item-input item-stacked-label'> <span class='input-label'>"+scope.count+"eme ingrédient:</span><input type='text'></label>";
+      scope.countIngredients++;
+       var txt= "<label class='item item-input item-stacked-label'> <span class='input-label'>"+scope.countIngredients+"eme ingrédient:</span><input type='text'></label>";
       angular.element(document.getElementById('other_ingredients')).append($compile(txt)(scope));
+    });
+  };
+})
+
+//Directive that returns an element which adds buttons on click which show an alert on click
+.directive("addstepsbutton", function(){
+  return {
+    restrict: "E",
+    template: "<button addsteps class='button button-balanced ion-plus-round  col-offset-80'/>"
+  }
+})
+
+//Directive for adding buttons on click that show an alert on click
+.directive("addsteps", function($compile){
+  return function(scope, element, attrs){
+    element.bind("click", function(){
+      scope.countSteps++;
+       var txt= "<label class='item item-input item-stacked-label'> <span class='input-label'> Etape "+scope.countSteps+" : </span><input type='text'></label>";
+      angular.element(document.getElementById('new_recipe_steps')).append($compile(txt)(scope));
     });
   };
 })

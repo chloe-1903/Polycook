@@ -144,18 +144,10 @@ angular.module('starter.controllers', [])
     });
   };
 
-  $scope.count=3;
+  $scope.countIngredients=3;
+  $scope.countSteps=3;
 
-  $scope.addIngredient = function(scope, element){
-    // var node = document.createElement("label");                 // Create a <li> node
-    // var txt= "<span class='input-label'>1er ingrédient:</span> <input type='text' placeholder='2 tomates'>";
-    // var textnode = document.createTextNode(txt);         // Create a text node
-    // node.appendChild(textnode); 
-    // document.getElementById("other_ingredients").appendChild(node); 
 
-    $scope.count++;
-    angular.element(document.getElementById('other_ingredients')).append($compile("<div><button class='btn btn-default' data-alert="+scope.count+">Show alert #"+scope.count+"</button></div>")(scope));
-  }
 
 })
 
