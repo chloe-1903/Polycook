@@ -1,18 +1,24 @@
 géolocalisation -> proposer liste de recettes en fonction de la localisation de l'utilisateur (en fonction des mots clés de la recette)
-Voir pour mettre les glyphicon
-dans les étapes des recettes, les boites ne sont pas espacées pareil
 Mettre des images de meme taille
 Mettre des couleurs
 Ajouter des pseudos aux commentaire et en faire des différents pour chaque recette
 Possibilité de commenter
+AJouter les pubs
+Essayer d'enlever l'espagne entre les ingrédients lors de l'ajout d'une recette
 
 
 -------------------------------
+Demo: Questions
 Quels sont vos adaptations? 
 Quels sont vos techhno?
 Adaptation à quel contexte? (au moins un des 3: device, environnement ou utilisateur)
 
+A dire (5min):
 Photos prises
 clavier du formulaire dépend du type
+on ne peut pas tourner le téléphone
 Geolocalisation
 Etapes
+Adaptation à la taille de l'écran: non prise en charge (on peut pas tourner l'écran) mais j'ai quand meme travaillé les images pour qu'elles ne soient pas déformées
+Mettre en avant le fait que le formulaire soit sur plusieurs pages pour eviter de scroller et de se perdre
+Ajout dynamique des champs pour les ingrédients

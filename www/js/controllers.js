@@ -88,8 +88,75 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('NewRecipeCtrl', function($scope, $http) {
+.controller('NewRecipeCtrl', function($scope, $http, Camera, $compile) {
+
+  $scope.options = {
+    loop: false,
+    //effect: 'fade',
+    speed: 500,
+  }
+
+  $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
+    // data.slider is the instance of Swiper
+    $scope.slider = data.slider;
+  });
+
+  $scope.$on("$ionicSlides.slideChangeStart", function(event, data){
+    console.log('Slide change is beginning');
+  });
+
+  $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
+    // note: the indexes are 0-based
+    $scope.activeIndex = data.activeIndex;
+    $scope.previousIndex = data.previousIndex;
+  });
+
+  $scope.takePicture = function (options) {
   
+      var options = {
+         quality : 75,
+         targetWidth: 200,
+         targetHeight: 200,
+         sourceType: 1
+      };
+
+      Camera.getPicture(options).then(function(imageData) {
+        $scope.img_src = imageData;
+      }, function(err) {
+        console.log(err);
+      });
+    
+   };
+
+  $scope.getPicture = function (options) {
+
+    var options = {
+       quality : 75,
+       targetWidth: 200,
+       targetHeight: 200,
+       sourceType: 0
+    };
+
+    Camera.getPicture(options).then(function(imageData) {
+        $scope.img_src = imageData;
+    }, function(err) {
+       console.log(err);
+    });
+  };
+
+  $scope.count=3;
+
+  $scope.addIngredient = function(scope, element){
+    // var node = document.createElement("label");                 // Create a <li> node
+    // var txt= "<span class='input-label'>1er ingrédient:</span> <input type='text' placeholder='2 tomates'>";
+    // var textnode = document.createTextNode(txt);         // Create a text node
+    // node.appendChild(textnode); 
+    // document.getElementById("other_ingredients").appendChild(node); 
+
+    $scope.count++;
+    angular.element(document.getElementById('other_ingredients')).append($compile("<div><button class='btn btn-default' data-alert="+scope.count+">Show alert #"+scope.count+"</button></div>")(scope));
+  }
+
 })
 
 .controller('RecipePicturesCtrl', function($scope, $http, $filter, $stateParams) {
