@@ -1,5 +1,11 @@
-<ion-view view-title="Search">
+<ion-view view-title="Rechercher une recette">
   <ion-content>
-    <h1>Search</h1>
+	<div class="list" collection-repeat="recipe in recipes">
+		<a class="item item-thumbnail-left" href="#/app/recipes/{{recipe.id}}">
+		    <img src="{{serviceUrl}}PolycookData/Pictures/{{recipe.picture_file}}">
+		  	<h2>{{recipe.name}}</h2>
+		  	<p>{{recipe.level}} - {{recipe.price}}</p>
+		</a>
+	</div>
   </ion-content>
 </ion-view>

@@ -94,7 +94,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/search',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/search.html',
+        controller: 'SearchCtrl'
       }
     }
   })
@@ -164,6 +165,36 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/newRecipe.html',
+          controller: 'NewRecipeCtrl'
+        }
+      }
+    })
+
+    .state('app.newRecipe2', {
+      url: '/newRecipe2',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/newRecipe2.html',
+          controller: 'NewRecipeCtrl'
+        }
+      }
+    })
+
+    .state('app.newRecipe3', {
+      url: '/newRecipe3',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/newRecipe3.html',
+          controller: 'NewRecipeCtrl'
+        }
+      }
+    })
+
+    .state('app.newRecipe4', {
+      url: '/newRecipe4',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/newRecipe4.html',
           controller: 'NewRecipeCtrl'
         }
       }

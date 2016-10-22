@@ -3,6 +3,7 @@ Mettre des images de meme taille
 Mettre des couleurs
 Ajouter des pseudos aux commentaire et en faire des différents pour chaque recette
 AJouter les pubs
+Quand on met trop d'ingrédients on peut plus scroller
 
 
 -------------------------------

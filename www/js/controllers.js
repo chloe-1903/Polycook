@@ -38,6 +38,25 @@ angular.module('starter.controllers', [])
   };
 })
 
+
+.controller('SearchCtrl', function($scope, $http, $location) {
+  if(ionic.Platform.isAndroid()){
+    $scope.serviceUrl = 'file:///android_asset/www/';
+  } else {
+    $scope.serviceUrl = '../';
+  }
+  $http.get($scope.serviceUrl+"PolycookData/allRecipes.json")
+    .success(function(response) {
+        $scope.recipes = response.recipes;
+        $scope.wantedRecipeName = "";
+        $scope.cityName ="";
+  });
+  $scope.go = function ( path ) {
+    $location.path( path + $scope.selected_item.id);
+  };
+})
+
+
 .controller('IngredientsCtrl', function($scope, $http, $filter, $stateParams) {
   if(ionic.Platform.isAndroid()){
     $scope.serviceUrl = 'file:///android_asset/www/';
@@ -88,11 +107,16 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('NewRecipeCtrl', function($scope, $http, Camera, $compile) {
+.controller('NewRecipeCtrl', function($scope,$location, $ionicPopup , Camera, $compile) {
+
+  $scope.go = function ( path ) {
+    $location.path( path );
+  };
 
   $scope.options = {
     loop: false,
     //effect: 'fade',
+    direction: 'horizontal',
     speed: 500,
   }
 
@@ -147,8 +171,16 @@ angular.module('starter.controllers', [])
   $scope.countIngredients=3;
   $scope.countSteps=3;
 
+  $scope.confirmAdd = function() {
+    var alertPopup = $ionicPopup.alert({
+      title: 'Recipe Add',
+      template: 'Your recipe has been add.'
+    });
 
-
+    alertPopup.then(function(res) {
+        $scope.go("app/main");
+    });
+  };
 })
 
 .controller('RecipePicturesCtrl', function($scope, $http, $filter, $stateParams) {
