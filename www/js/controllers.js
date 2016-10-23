@@ -39,7 +39,7 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('SearchCtrl', function($scope, $http, $location) {
+.controller('SearchCtrl', function($scope, $http, $location, $cordovaGeolocation) {
   if(ionic.Platform.isAndroid()){
     $scope.serviceUrl = 'file:///android_asset/www/';
   } else {
@@ -48,11 +48,50 @@ angular.module('starter.controllers', [])
   $http.get($scope.serviceUrl+"PolycookData/allRecipes.json")
     .success(function(response) {
         $scope.recipes = response.recipes;
-        $scope.wantedRecipeName = "";
-        $scope.cityName ="";
+        $scope.isFilteredFromCity = false;
+        $scope.cityName = "";
+        var posOptions = {timeout: 10000, enableHighAccuracy: false};
+        $cordovaGeolocation.getCurrentPosition(posOptions)
+          .then(function (position) {
+            $scope.lat  = position.coords.latitude;
+            $scope.long = position.coords.longitude;
+            // $http.get('http://nominatim.openstreetmap.org/reverse?json_callback=?&format=json', {lat: $scope.lat, lon: $scope.long}, function(data) {
+            //     $scope.cityName = data.address.country;
+            //      console.log(lat + '   ' + long);
+            // });
+            $http({
+              method: 'GET',
+              url: "http://nominatim.openstreetmap.org/reverse?lat="+$scope.lat+"&lon="+$scope.long+"&format=json"
+            }).then(function successCallback(response) {
+                $scope.cityName = response.data.address.village + ", "+ response.data.address.county;
+              }, function errorCallback(response) {
+                $scope.cityName = response;
+              });
+            
+          }, function(err) {
+            console.log(err)
+          });
   });
   $scope.go = function ( path ) {
     $location.path( path + $scope.selected_item.id);
+  };
+
+  $scope.filterFromCity = function(){
+    $scope.isFilteredFromCity = !$scope.isFilteredFromCity;
+    $http.get($scope.serviceUrl+"PolycookData/allRecipes.json")
+    .success(function(response) {
+      if (!$scope.isFilteredFromCity)
+        $scope.recipes = response.recipes;
+      else {
+        console.log("ici");
+        var res = [];
+        angular.forEach(response.recipes, function(value, key) {
+          if (value.name.indexOf("Niçoise") !== -1)
+            this.push(value);
+        }, res);
+        $scope.recipes =  res;
+      }
+    });
   };
 })
 

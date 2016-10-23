@@ -1,6 +1,18 @@
 <ion-view view-title="Rechercher une recette">
   <ion-content>
-	<div class="list" collection-repeat="recipe in recipes">
+  
+
+
+  <div class="item">
+    <label class="item row item-input">
+	    <i class="icon ion-search placeholder-icon"></i>
+	    <input type="text" placeholder="Rechercher" ng-model="searchName.name">
+	  </label>
+	  <ion-checkbox style="font-style:italic;font-size: 75%;"  ng-click="filterFromCity()">Recettes de la région de {{cityName}}</ion-checkbox>
+  </div>
+
+
+	<div class="list" collection-repeat="recipe in recipes | filter:searchName">
 		<a class="item item-thumbnail-left" href="#/app/recipes/{{recipe.id}}">
 		    <img src="{{serviceUrl}}PolycookData/Pictures/{{recipe.picture_file}}">
 		  	<h2>{{recipe.name}}</h2>
