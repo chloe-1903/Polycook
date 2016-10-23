@@ -2,8 +2,8 @@
     "recipes": [
     	{"id" : "1",
         "name": "Lasagnes végétariennes",
-    	"picture_file" : "lasagnes-vegetariennes.jpg",
-        "recipe_images" : ["11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg"],
+    	"picture_file" : "lasagnes-vegetariennes.jpeg",
+        "recipe_images" : ["11.jpeg", "12.jpg", "13.jpg", "14.jpg", "15.jpg"],
     	"steps_file" : "lasagnes-vegetariennes.json",
     	"prep_time" : "20min",
     	"cooking_time" : "45min",
@@ -26,8 +26,8 @@
     	},
     	{"id" : "2",
         "name": "Saumon en papillote",
-    	"picture_file" : "saumon-en-papillote.jpg",
-        "recipe_images" : ["21.jpg", "22.jpg", "23.jpg", "24.jpeg", "25.jpg"],
+    	"picture_file" : "saumon-en-papillote.jpeg",
+        "recipe_images" : ["21.jpg", "22.jpg", "23.jpg", "24.jpeg", "25.jpg", "26.jpeg"],
     	"steps_file" : "saumon-en-papillote.txt",
     	"prep_time" : "15min",
     	"cooking_time" : "20min",
@@ -115,6 +115,28 @@
         "level": "Facile", 
         "price" : "1,50",
         "note":"2,3/5"
+        },
+        {"id" : "6",
+        "name": "Maki avocat-radis-concombre",
+        "picture_file" : "sushis.jpg",
+        "recipe_images" : ["61.jpg", "62.jpg", "63.jpg", "64.jpg"],
+        "steps_file" : "sushis.txt",
+        "prep_time" : "15min",
+        "cooking_time" : "-",
+        "share" : "4",
+        "ingredients" : [
+            "200 g de riz à sushi cuit",
+            "1 avocat mûr",
+            "1 petit concombre",
+            "4 feuilles d'algues",
+            "8 radis rose(s)",
+            "1 cuillérée à soupe de sésame noir",
+            "1 cuillérée à soupe de sésame blanc"
+        ], 
+        "level": "Facile", 
+        "price" : "2,20",
+        "note":"2,9/5"
         }
+
     ]
 }
