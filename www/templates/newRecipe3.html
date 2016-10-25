@@ -1,0 +1,27 @@
+<ion-view view-title="Polycook">
+	<ion-content>
+		<div class="list" id="other_ingredients">
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">1er ingrédient:</span>
+				<input type="text" placeholder="2 tomates">
+			</label>
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">2eme ingrédient:</span>
+				<input type="text">
+			</label>
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">3eme ingrédient:</span>
+				<input type="text">
+			</label>
+		</div>
+		<addingredientsbutton></addingredientsbutton>
+		 
+		<div class="row">
+			<button class = "button col col-33 button-outline button-stable" ng-click = "go('app/newRecipe2')">Précédant</button>
+			<button class = "button col col-33 col-offset-33 button-outline button-stable" ng-click = "go('app/newRecipe4')">Suivant</button>
+		</div>
+	</ion-content>
+	<ion-footer-bar class="bar-dark">
+    	<h2 class="title">Publicités</h2>
+  	</ion-footer-bar>
+</ion-view>

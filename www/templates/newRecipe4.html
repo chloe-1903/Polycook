@@ -1,0 +1,28 @@
+<ion-view view-title="Polycook">
+	<ion-content>
+		<div class="list" id="new_recipe_steps">
+					<!-- <ion-content overflow-scroll="true"> -->
+						<label class="item item-input item-stacked-label">
+							<span class="input-label">Etape 1 :</span>
+							<input type="text" placeholder="Eplucher les pommes de terres et les couper en rondelles.">
+						</label>
+						<label class="item item-input item-stacked-label">
+							<span class="input-label">Etape 2 :</span>
+							<input type="text">
+						</label>
+						<label class="item item-input item-stacked-label">
+							<span class="input-label">Etape 3 :</span>
+							<input type="text">
+						</label>
+					<!-- <ion-content> -->
+				</div>
+				<addstepsbutton></addstepsbutton>
+				<div class="row">
+					<button class = "button col col-33 button-outline button-stable" ng-click = "go('app/newRecipe3')">Précédant</button>
+					<button class = "button col col-33 col-offset-33 button-outline button-stable" ng-click="confirmAdd()">Valider</button>
+				</div>
+	</ion-content>
+	<ion-footer-bar class="bar-dark">
+    	<h2 class="title">Publicités</h2>
+  	</ion-footer-bar>
+</ion-view>

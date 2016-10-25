@@ -1,0 +1,18 @@
+<ion-view view-title="Polycook">
+	<ion-content>
+		<div class="row">
+		  	<button class = "button col button-outline button-stable" ng-click = "takePicture()">Nouvelle photo</button>
+			<button class = "button col button-outline button-stable"  ng-click = "getPicture()">Galerie</button>
+		</div>
+		<div class="row">
+			<img class="col col-50 col-offset-25" src="{{img_src}}" />
+		</div>
+		<div class="row">
+			<button class = "button col col-33  button-outline button-stable" ng-click = "go('app/newRecipe')">Précédant</button>
+			<button class = "button col col-33 col-offset-33 button-outline button-stable" ng-click = "go('app/newRecipe3')">Suivant</button>
+		</div>
+	</ion-content>
+	  <ion-footer-bar class="bar-dark">
+	    <h2 class="title">Publicités</h2>
+	  </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,47 @@
+{
+    "recipe_comments": [
+    	{"id" : "1",
+	"comments": [ {"pseudo":" yaoemm ", "content":"En tout cas rien qu’en photo, moi ca me fait rêver. J’avoue que la viande végétale me tente pas du tout."}, 
+		{"pseudo":"jacquegE1", "content":"Vraiment délicieuses ces lasagnes et facile à faire. Je mettrais bien un peu de basilic la prochaine fois. Merci !"},
+		{"pseudo":"nath03m", "content":"Super recette! J’ai fait revenir les courgettes avec des oignons avant de les incorporez à la ricotta, et j’ai parfumez le mélange avec de la noix de muscade et du curry pour relever un peu le tout! c’était super bon, à l’unanimité! merci!"},
+		{"pseudo":"coraliPz", "content":"Cette recette me donne terriblement envie moi qui ne rafole pas de viande. Question sûrement bête mais… Les courgettes je ne les fait pas cuire avant ?"},
+		{"pseudo":"veronikI4 ", "content":"Elles sont irrésistibles!"}, {"pseudo":"jacquegE1", "content":"C’est trop beau !!"}]
+	},
+    	{"id" : "2",
+	"comments": [ {"pseudo":"jacquegE1", "content": "En tout cas rien qu’en photo, moi ca me fait rêver. J’avoue que la viande végétale me tente pas du tout."}, 
+		{"pseudo":"coraliPz", "content":"Vraiment délicieux,  et facile à faire. Je mettrais bien un peu de sucre la prochaine fois. Merci !"},
+		{"pseudo":"jacquegE1", "content": "très bon et facile à faire en suivent les explications merci"},
+		{"pseudo":"ssamia", "content":"Cette recette me donne terriblement envie."},
+		{"pseudo":"sissilw", "content":"Elles sont irrésistibles!"}, {"pseudo":"jacquegE1", "content":"C’est trop beau !!"}]
+	},
+	{"id" : "3",
+	"comments": [{"pseudo":"jacquegE1", "content": "En tout cas rien qu’en photo, moi ca me fait rêver. J’avoue que la viande végétale me tente pas du tout."}, 
+		{"pseudo":"nath03m", "content":"Vraiment délicieux. Merci !"},
+		{"pseudo":"berry02", "content":"très bon et facile à faire en suivent les explications merci"},
+		{"pseudo":"jacquegE1", "content":"Cette recette me donne terriblement envie moi qui ne rafole pas de viande. Question sûrement bête mais… Les courgettes je ne les fait pas cuire avant ?"},
+		{"pseudo":"coraliPz", "content":"Elles sont irrésistibles!"}, {"pseudo":"jacquegE1", "content":"C’est trop beau !!"}]
+	},
+	{"id" : "4",
+	"comments": [ {"pseudo":"jacquegE1", "content":"En tout cas rien qu’en photo, moi ca me fait rêver. J’avoue que la viande végétale me tente pas du tout."}, 
+		{"pseudo":"berry02", "content":"Vraiment délicieux,  et facile à faire. Je mettrais bien un peu de basilic la prochaine fois. Merci !"},
+		{"pseudo":"nath03m", "content":"très bon et facile à faire en suivent les explications merci"},
+		{"pseudo":"ssamia", "content":"Cette recette me donne terriblement envie moi qui ne rafole pas de viande. Question sûrement bête mais… Les courgettes je ne les fait pas cuire avant ?"},
+		{"pseudo":"coraliPz", "content":"Elles sont irrésistibles!"}, {"pseudo":"jacquegE1", "content":"C’est trop beau !!"}]
+	},
+	{"id" : "5",
+	"comments": [ {"pseudo":"nath03m", "content":"En tout cas rien qu’en photo, moi ca me fait rêver. J’avoue que la viande végétale me tente pas du tout."}, 
+		{"pseudo":"coraliPz", "content":"Bonjour, je suis en plein préparatif de la salade, je souhaiterais savoir si je dois mettre de l'huile d'olive si je mets du citron? Merci d'avance"},
+		{"pseudo":"ssamia", "content":"très bon et facile à faire en suivent les explications merci"},
+		{"pseudo":"sissilw", "content":"j'utilise exactement cette recette elle est parfaite!! le riz est délicieux il se tient c'est du bonheur!!"},
+		{"pseudo":"jacquegE1", "content":"Elles sont irrésistibles!"}, {"pseudo":"jacquegE1", "content":"C’est trop beau !!"}]
+	}, 
+		{"id" : "6",
+	"comments": [ {"pseudo":"veronikI4", "content":"En tout cas rien qu’en photo, moi ca me fait rêver."}, 
+		{"pseudo":"sissilw", "content":"bonjour voila une petite astuce de chef japonais. Mettez une cuillère à soupe de mirin dans la sauce vinaigre sucre sel, cela rendra les grains de riz brillants et le gingembre est mieux à cote marine au vinaigre avec aussi un peu de wasabi et de sauce soja patrick du cros"},
+		{"pseudo":"nath03m", "content":"Super recette! merci!"},
+		{"pseudo":" yaoemm ", "content":"Cette recette me donne terriblement envie moi qui ne rafole pas de viande. Question sûrement bête mais… Les courgettes je ne les fait pas cuire avant ?"},
+		{"pseudo":"coraliPz", "content":"Ils sont irrésistibles!"}, {"pseudo":"jacquegE1", "content":"C’est trop beau !!"}]
+	}
+	]
+}
+		

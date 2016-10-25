@@ -1,0 +1,17 @@
+<ion-view view-title="Commentaires">
+  <ion-content>
+  	<div ng-repeat="comment in comments">
+  		<div class="card">
+		  <div class="item item-divider">
+		    {{comment.pseudo}}
+		  </div>
+		  <div class="item item-text-wrap">
+		    {{comment.content}}
+		  </div>
+		</div>
+	</div>
+  </ion-content>
+  <ion-footer-bar class="bar-dark">
+    <h2 class="title">Publicités</h2>
+  </ion-footer-bar>
+</ion-view>

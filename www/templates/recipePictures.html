@@ -1,0 +1,20 @@
+<ion-view view-title="{{selected_item.name}} Recette">
+	<ion-content scroll="false">
+	  <ion-slides  options="options" slider="data.slider" >
+
+	    	<ion-slide-page ng-repeat="imagePath in recipe_images"> 
+    			
+	    		<div  class="myPictures" style="background:url('{{serviceUrl}}PolycookData/Pictures/{{selected_item.id}}/{{imagePath}}') no-repeat; background-size: cover; background-position: center; ">
+			        <span>
+			           {{selected_item.name}} 
+			        </span>
+			    </div>
+
+	    	</ion-slide-page>
+		  
+		</ion-slides>
+	</ion-content>
+	  <ion-footer-bar class="bar-dark">
+    <h2 class="title">Publicités</h2>
+  </ion-footer-bar>
+</ion-view>

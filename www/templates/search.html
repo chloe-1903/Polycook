@@ -12,7 +12,7 @@
   </div>
 
 
-	<div class="list" collection-repeat="recipe in recipes | filter:searchName">
+	<div class="list" collection-repeat="recipe in recipes | orderBy:'name'| filter:searchName">
 		<a class="item item-thumbnail-left" href="#/app/recipes/{{recipe.id}}">
 		    <img src="{{serviceUrl}}PolycookData/Pictures/{{recipe.picture_file}}">
 		  	<h2>{{recipe.name}}</h2>

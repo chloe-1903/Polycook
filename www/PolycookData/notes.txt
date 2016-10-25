@@ -1,7 +1,5 @@
-Mettre des couleurs
-AJouter les pubs
 ranger par ordre alpha
-a quoi sert la page d'accueil (ce qu'elle apporte de plus que la page de recherche)
+Retour au menu principal un peu chiant quand on est dans l'ajout de recette
 
 
 -------------------------------
